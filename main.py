@@ -42,6 +42,10 @@ for i in range(tries):
             print(">>> The guess is HIGH")
         else:
             print(">>> The guess is LOW")
+else:
+    # No correct guess: skip the "you won" banner below.
+    print(f">>> Out of tries. The number was {random_number}.")
+    raise SystemExit
 
 # Final Results
 print("-" * 30)
